@@ -1,0 +1,27 @@
+{
+  "name": "metal_festival",
+  "version": "1.0.0",
+  "description": "Página web de un festival de metal hecha con SASS y NPM.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GRVictor/metal_festival.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Victor García @CodeStrokesMX",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GRVictor/metal_festival/issues"
+  },
+  "homepage": "https://github.com/GRVictor/metal_festival#readme",
+  "devDependencies": {
+    "sass": "^1.80.7"
+  }
+}
