@@ -2,9 +2,11 @@
   "name": "metal_festival",
   "version": "1.0.0",
   "description": "Página web de un festival de metal hecha con SASS y NPM.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch src/scss:build/css"
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   "homepage": "https://github.com/GRVictor/metal_festival#readme",
   "devDependencies": {
     "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.80.7"
   }
 }
