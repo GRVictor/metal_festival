@@ -1,0 +1,57 @@
+@use 'base/variables' as *;
+@use 'base/mixins' as *;
+
+.video {
+    position: relative;
+    min-height: 50rem;
+    max-height: 70rem;
+    overflow: hidden;
+
+    .overlay {
+        position: absolute;
+        background: linear-gradient(
+            270deg,
+            rgba($primary-color, 40%),
+            rgba($primary-color, 70%)
+        );
+        inset: 0;
+
+        display: flex;
+        align-items: center;
+    }
+
+    video {
+        display: block;
+        width: 100%; // Ancho del 100% por defecto
+
+        @include tabletL {
+            width: auto; // Ancho automático en resoluciones menores
+        }
+    }
+}
+
+.video-container {
+    text-align: center;
+
+    h2 {
+        color: $secondary-color;
+        font-size: 8rem;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px $primary-color;
+        letter-spacing: 0.5rem;
+        padding-top: 5rem;
+
+        @include tabletL {
+            font-size: 5rem;
+        }
+    }
+
+    p {
+        font-family: $secondary-font;
+        font-size: 1.6rem;
+        background-color: $tertiary-color;
+        display: inline-block;
+        padding: 1rem 2rem;
+        margin-top: 2rem;
+    }
+}

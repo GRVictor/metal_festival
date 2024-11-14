@@ -3,43 +3,38 @@
 
 .logo {
     display: block;
-    margin: 0;
     width: 150px;
+    margin: 0 auto; // Centrar la imagen
 }
 
 .header {
   background-color: $black;
   padding: 1rem;
 
-  @include smartphone {
-    padding: 1rem 0;
-  }
-  
   .container-header {
-    padding: 1rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; // Cambiar la dirección del flex a columna
+    align-items: center; // Centrar los elementos horizontalmente
+    padding: 1rem;
   }
-
-  
 }
 
 .primary-nav {
     display: flex;
     gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem; // Añadir margen superior para separar de la imagen
     a {
         color: $secondary-color;
         font-size: 2rem;
         text-transform: uppercase;
-        transition: font-size 0.5s ease;
+        transition: font-size 0.3s ease;
 
         &:hover {
             font-size: 2.2rem;
             color: $tertiary-color;
         }
-
-      }
+    }
 }
 
 @mixin container {

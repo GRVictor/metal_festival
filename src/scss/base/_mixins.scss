@@ -1,5 +1,31 @@
-@mixin smartphone {
-    @media (max-width: 768px) {
+@use 'base/variables' as *;
+
+@mixin phone {
+    @media (max-width: $phone) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin tabletL {
+    @media (max-width: $tabletL) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin desktopXL {
+    @media (max-width: $desktopXL) {
         @content;
     }
 }
