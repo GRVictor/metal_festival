@@ -1,7 +1,2 @@
-@use 'variables' as *;
-
-body {
-    font-family: $primary-font;
-    font-style: normal;
-    font-weight: 400;
-}
+@forward 'base';
+@forward 'layout';
