@@ -1,2 +1,41 @@
 @use '../base/variables' as *;
-@use '../base/index' as *;
+@use '../base/mixins' as *;
+
+.about-festival {
+    @include container;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+        align-items: center; // Centrar los elementos verticalmente en el grid
+    }
+
+    .image {
+        display: flex;
+        justify-content: center; // Centrar la imagen horizontalmente
+        align-items: center; // Centrar la imagen verticalmente
+    }
+}
+
+.content-festival {
+    margin-top: 5rem;
+
+    h2 {
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+    }
+
+    .date {
+        font-size: 3rem;
+        font-family: $secondary-font;
+        color: $tertiary-color; // Cambiar el color a $tertiary-color
+    }
+
+    p {
+        font-family: $secondary-font;
+        font-size: 2rem;
+        color: $black;
+    }
+}

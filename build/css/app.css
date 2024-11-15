@@ -459,3 +459,41 @@ body > section {
   padding: 1rem 2rem;
   margin-top: 2rem;
 }
+
+.about-festival {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .about-festival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+}
+.about-festival .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-festival {
+  margin-top: 5rem;
+}
+.content-festival h2 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+.content-festival .date {
+  font-size: 3rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: #B22222;
+}
+.content-festival p {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 2rem;
+  color: #000000;
+}
