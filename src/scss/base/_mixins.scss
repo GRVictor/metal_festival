@@ -1,31 +1,37 @@
-@use 'base/variables' as *;
+@use 'variables' as *;
 
 @mixin phone {
-    @media (max-width: $phone) {
+    @media (min-width: $phone) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media (max-width: $tablet) {
+    @media (min-width: $tablet) {
         @content;
     }
 }
 
 @mixin tabletL {
-    @media (max-width: $tabletL) {
+    @media (min-width: $tabletL) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media (max-width: $desktop) {
+    @media (min-width: $desktop) {
         @content;
     }
 }
 
 @mixin desktopXL {
-    @media (max-width: $desktopXL) {
+    @media (min-width: $desktopXL) {
         @content;
     }
+}
+
+@mixin container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
 }

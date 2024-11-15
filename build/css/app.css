@@ -415,22 +415,24 @@ body > section {
   min-height: 50rem;
   max-height: 70rem;
   overflow: hidden;
+  width: 100%;
 }
 .video .overlay {
   position: absolute;
   background: linear-gradient(270deg, rgba(33, 42, 55, 0.4), rgba(33, 42, 55, 0.7));
   inset: 0;
+  z-index: 1;
   display: flex;
   align-items: center;
 }
 .video video {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-}
-@media (max-width: 1024px) {
-  .video video {
-    width: auto;
-  }
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .video-container {
@@ -438,15 +440,15 @@ body > section {
 }
 .video-container h2 {
   color: #DED5C8;
-  font-size: 8rem;
+  font-size: 5rem;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px #212A37;
   letter-spacing: 0.5rem;
   padding-top: 5rem;
 }
-@media (max-width: 1024px) {
+@media (min-width: 1200px) {
   .video-container h2 {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 }
 .video-container p {
