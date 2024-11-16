@@ -377,7 +377,7 @@ body > section {
 }
 
 .header {
-  background-color: #000000;
+  background-color: #1D1F21;
   padding: 1rem;
 }
 .header .container-header {
@@ -419,7 +419,7 @@ body > section {
 }
 .video .overlay {
   position: absolute;
-  background: linear-gradient(270deg, rgba(33, 42, 55, 0.4), rgba(33, 42, 55, 0.7));
+  background: linear-gradient(270deg, rgba(29, 31, 33, 0.4), rgba(29, 31, 33, 0.7));
   inset: 0;
   z-index: 1;
   display: flex;
@@ -442,7 +442,7 @@ body > section {
   color: #DED5C8;
   font-size: 5rem;
   text-transform: uppercase;
-  text-shadow: 2px 2px 2px #212A37;
+  text-shadow: 2px 2px 2px #1D1F21;
   letter-spacing: 0.5rem;
   padding-top: 5rem;
 }
