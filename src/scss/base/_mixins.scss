@@ -35,3 +35,16 @@
     max-width: 120rem;
     margin: 0 auto;
 }
+
+@mixin grid($columns : 2, $gap : 5rem) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+    align-items: center; // Centrar los elementos verticalmente en el grid
+}
+
+@mixin rest-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

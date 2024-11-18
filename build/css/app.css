@@ -367,7 +367,7 @@ img {
 }
 
 body > section {
-  padding: 10rem 0;
+  padding: 7rem 0;
 }
 
 .logo {
@@ -496,4 +496,86 @@ body > section {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 2rem;
   color: #000000;
+}
+
+.lineup {
+  background-color: #000000;
+}
+.lineup h3 {
+  color: #FFFFFF;
+  font-size: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.lineup .day {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.stage-container {
+  color: #FFFFFF;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .stage-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+}
+
+.stage {
+  padding-top: 2rem;
+}
+.stage .name-stage {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  font-family: "New Rocker", system-ui;
+}
+
+.calendar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendar li {
+  color: #B22222;
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.calendar li span {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.stage.bg-primary {
+  background-color: #1D1F21;
+}
+.stage.bg-primary li:nth-child(odd) {
+  background-color: rgb(40.9274193548, 43.75, 46.5725806452);
+}
+
+.stage.bg-secondary {
+  background-color: #DED5C8;
+}
+.stage.bg-secondary .name-stage {
+  color: #000000;
+}
+.stage.bg-secondary li:nth-child(odd) {
+  background-color: rgb(231.5625, 225.1704545455, 215.9375);
+}
+.stage.bg-secondary li {
+  color: white;
+}
+.stage.bg-secondary li span {
+  color: #B22222;
 }

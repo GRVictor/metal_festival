@@ -1,0 +1,86 @@
+@use 'base/variables' as *;
+@use 'base/mixins' as *;
+
+.lineup {
+
+    background-color: $black;
+
+    h3 {
+        color: $white;
+        font-size: 5rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .day {
+        color: $white;
+        text-align: center;
+        font-size: 3rem;
+        font-family: $secondary-font;
+    }
+}
+
+.stage-container {
+    color: $white;
+    font-family: $secondary-font;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+
+    @include container;
+    @include tablet {
+        @include grid (2);
+    }
+}
+
+.stage {
+    padding-top: 2rem;
+    .name-stage{
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+        font-family: $primary-font;
+    }
+}
+
+.calendar {
+    @include rest-list;
+
+    li {
+        color: $tertiary-color;
+        padding: 2.5rem;
+        font-weight: 700;
+        span {
+            color: $white;
+            font-weight: 400;
+        }
+    }
+}
+
+.stage.bg-primary {
+    background-color: $primary-color;
+
+    li:nth-child(odd) {
+        background-color: lighten($primary-color, 5%);
+    }
+
+    
+}
+.stage.bg-secondary {
+    
+    background-color: $secondary-color;
+
+    .name-stage {
+        color: $black;
+    }
+
+    li:nth-child(odd) {
+        background-color: lighten($secondary-color, 5%);
+    }
+
+    li {
+        color: white;
+        span {
+            color: $tertiary-color;
+        }
+    }
+}

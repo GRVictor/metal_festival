@@ -5,10 +5,7 @@
     @include container;
 
     @include tablet {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5rem;
-        align-items: center; // Centrar los elementos verticalmente en el grid
+        @include grid(2, 5rem);
     }
 
     .image {
