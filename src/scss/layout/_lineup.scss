@@ -1,5 +1,5 @@
-@use 'base/variables' as *;
-@use 'base/mixins' as *;
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
 
 .lineup {
 
@@ -27,6 +27,7 @@
     text-transform: uppercase;
 
     @include container;
+    
     @include tablet {
         @include grid (2);
     }
@@ -43,7 +44,7 @@
 }
 
 .calendar {
-    @include rest-list;
+    @include reset-list;
 
     li {
         color: $tertiary-color;
@@ -62,9 +63,8 @@
     li:nth-child(odd) {
         background-color: lighten($primary-color, 5%);
     }
-
-    
 }
+
 .stage.bg-secondary {
     
     background-color: $secondary-color;

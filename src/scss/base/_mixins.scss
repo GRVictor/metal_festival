@@ -43,7 +43,7 @@
     align-items: center; // Centrar los elementos verticalmente en el grid
 }
 
-@mixin rest-list {
+@mixin reset-list {
     margin: 0;
     padding: 0;
     list-style: none;

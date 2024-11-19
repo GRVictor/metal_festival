@@ -579,3 +579,89 @@ body > section {
 .stage.bg-secondary li span {
   color: #B22222;
 }
+
+.container-ticket {
+  background-color: #1D1F21;
+}
+.container-ticket h3 {
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.container-ticket .tickets {
+  align-items: flex-start;
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container-ticket .tickets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+}
+
+.pass-name {
+  text-transform: uppercase;
+  color: #DED5C8;
+  font-size: 4rem;
+  text-align: center;
+}
+.pass-header, .pass-footer {
+  padding: 0.5rem;
+}
+.pass-header p, .pass-footer p {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+.pass-header {
+  background-color: #000000;
+}
+.pass-header p {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 1rem 0;
+}
+.pass-body {
+  background-color: #DED5C8;
+}
+.pass-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pass-body ul li {
+  padding: 2rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 2.3rem;
+}
+.pass-body ul li:last-child {
+  border-bottom: none;
+}
+.pass-footer {
+  background-color: #DED5C8;
+  padding: 3rem;
+}
+.pass-footer p {
+  font-size: 2.8rem;
+  font-weight: 900;
+  background-color: #B22222;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.pass-footer p:hover {
+  background-color: rgb(156.5896226415, 29.9103773585, 29.9103773585);
+  color: #FFFFFF;
+}
+.pass .pass-name.sinner {
+  color: #B22222;
+}
+
+/*# sourceMappingURL=app.css.map */
