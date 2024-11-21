@@ -3,21 +3,27 @@
 @use "sass:color";
 
 .gallery {
+
+    h3 {
+        text-transform: uppercase;
+    }
+
     @include container;
     &-images {
-        @include grid(1, 2rem);
-
-        @include phone {
-            @include grid(2, 2rem);
-        }
+        @include grid(2, 2rem);
 
         @include tablet {
             @include grid(3, 2rem);
         }
 
+        @include tabletL {
+            @include grid(4, 2rem);
+        }
+
         @include desktop {
             @include grid(4, 2rem);
         }
+
 
         img {
             height: 20rem;
