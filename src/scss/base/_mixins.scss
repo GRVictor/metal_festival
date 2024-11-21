@@ -15,7 +15,7 @@
 @mixin tabletL {
     @media (min-width: $tabletL) {
         @content;
-    }
+    }       
 }
 
 @mixin desktop {
@@ -40,7 +40,7 @@
     display: grid;
     grid-template-columns: repeat($columns, 1fr);
     gap: $gap;
-    align-items: center; // Centrar los elementos verticalmente en el grid
+    align-items: start;
 }
 
 @mixin reset-list {

@@ -17,6 +17,10 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     color: $black;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 p {

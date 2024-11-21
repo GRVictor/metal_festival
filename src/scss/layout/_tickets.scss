@@ -1,8 +1,10 @@
 @use '../base/variables' as *;
 @use '../base/mixins' as *;
+@use "sass:color";
 
 .container-ticket {
     background-color: $primary-color;
+    align-items: start;
     h3 {
         text-transform: uppercase;
         color: $white;
@@ -18,6 +20,11 @@
 }
 
 .pass {
+
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
 
     &-name {
         text-transform: uppercase;
@@ -56,6 +63,7 @@
                 padding: 2rem;
                 font-family: $secondary-font;
                 font-size: 2.3rem;
+                text-decoration: underline;
                 
                 &:last-child {
                     border-bottom: none;
@@ -75,7 +83,7 @@
             padding: 1rem 0;
             cursor: pointer;
             &:hover {
-                background-color: darken($tertiary-color, 5%);
+                background-color: color.adjust($tertiary-color, $lightness: -5%);
                 color: $white;
             }
         }

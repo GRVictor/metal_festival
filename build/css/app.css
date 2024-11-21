@@ -325,6 +325,9 @@ body {
   font-style: normal;
   color: #000000;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 
 p {
   color: #FFFFFF;
@@ -465,12 +468,12 @@ body > section {
   max-width: 120rem;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .about-festival {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
-    align-items: center;
+    align-items: start;
   }
 }
 .about-festival .image {
@@ -498,6 +501,78 @@ body > section {
   color: #000000;
 }
 
+.gallery {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+@media (min-width: 420px) {
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: start;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: start;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    align-items: start;
+  }
+}
+.gallery-images img {
+  height: 20rem;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(29, 31, 33, 0.5);
+  display: grid;
+  place-items: center;
+  animation: fadeIn ease-in 0.5s;
+}
+.modal.fade-out {
+  animation: fadeOut ease-out 0.5s;
+}
+.modal img {
+  max-width: 100rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .lineup {
   background-color: #000000;
 }
@@ -528,7 +603,7 @@ body > section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
-    align-items: center;
+    align-items: start;
   }
 }
 
@@ -582,6 +657,7 @@ body > section {
 
 .container-ticket {
   background-color: #1D1F21;
+  align-items: start;
 }
 .container-ticket h3 {
   text-transform: uppercase;
@@ -598,10 +674,16 @@ body > section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
-    align-items: center;
+    align-items: start;
   }
 }
 
+.pass {
+  transition: transform 0.3s ease-in-out;
+}
+.pass:hover {
+  transform: scale(1.1);
+}
 .pass-name {
   text-transform: uppercase;
   color: #DED5C8;
@@ -640,6 +722,7 @@ body > section {
   padding: 2rem;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 2.3rem;
+  text-decoration: underline;
 }
 .pass-body ul li:last-child {
   border-bottom: none;
@@ -664,4 +747,30 @@ body > section {
   color: #B22222;
 }
 
-/*# sourceMappingURL=app.css.map */
+.footer-content {
+  background-color: rgb(52.8548387097, 56.5, 60.1451612903);
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.footer-content p {
+  font-family: "Hanken Grotesk", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 1rem 0 0 0;
+}
+.footer-content a {
+  margin-right: 1rem;
+  color: #DED5C8;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  transition: font-size 0.3s ease;
+}
+.footer-content a:last-child {
+  margin-right: 0;
+}
+.footer-content a:hover {
+  font-size: 2rem;
+  color: #B22222;
+}

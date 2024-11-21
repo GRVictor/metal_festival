@@ -1,0 +1,68 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+@use "sass:color";
+
+.gallery {
+    @include container;
+    &-images {
+        @include grid(1, 2rem);
+
+        @include phone {
+            @include grid(2, 2rem);
+        }
+
+        @include tablet {
+            @include grid(3, 2rem);
+        }
+
+        @include desktop {
+            @include grid(4, 2rem);
+        }
+
+        img {
+            height: 20rem;
+            object-fit: cover;
+            filter: grayscale(100%);
+
+        }
+
+    }
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba($primary-color, 0.5);
+    display: grid;
+    place-items: center;
+    animation: fadeIn ease-in 0.5s;
+
+    &.fade-out {
+        animation: fadeOut ease-out 0.5s;
+    }
+
+    img {
+        max-width: 100rem;
+    }
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

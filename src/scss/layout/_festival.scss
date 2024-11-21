@@ -4,7 +4,7 @@
 .about-festival {
     @include container;
 
-    @include tablet {
+    @include desktop {
         @include grid(2, 5rem);
     }
 

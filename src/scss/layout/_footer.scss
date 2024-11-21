@@ -1,0 +1,35 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+@use "sass:color";
+
+.footer-content {
+    background-color: color.adjust($primary-color, $lightness: 10%);
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+
+        p {
+        font-family: $secondary-font;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 1rem 0 0 0;
+        }
+
+        a {
+        margin-right: 1rem;
+        color: $secondary-color;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        transition: font-size 0.3s ease;
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            &:hover {
+                font-size: 2rem;
+                color: $tertiary-color;
+            }
+        }
+}
