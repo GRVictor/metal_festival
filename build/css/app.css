@@ -378,10 +378,21 @@ body > section {
   width: 150px;
   margin: 0 auto;
 }
+.logo.hidden {
+  display: none;
+  width: 0;
+}
 
 .header {
   background-color: #1D1F21;
   padding: 1rem;
+}
+.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 .header .container-header {
   display: flex;

@@ -5,10 +5,23 @@
     display: block;
     width: 150px;
     margin: 0 auto; // Centrar la imagen
+
+    &.hidden {
+        display: none; // Ocultar el logo
+        width: 0;
+    }
 }
 
 .header {
   background-color: $primary-color;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
 
   padding: 1rem;
 
