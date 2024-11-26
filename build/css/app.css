@@ -413,7 +413,7 @@ body > section {
   text-transform: uppercase;
   transition: font-size 0.3s ease;
 }
-.primary-nav a:hover {
+.primary-nav a:hover, .primary-nav a.highlight {
   font-size: 2.2rem;
   color: #B22222;
 }
