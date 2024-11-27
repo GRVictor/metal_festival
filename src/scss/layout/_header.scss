@@ -20,6 +20,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000; // Asegurar que el header esté por encima de otros elementos en pantallas más grandes
+
   }
 
   padding: 1rem;

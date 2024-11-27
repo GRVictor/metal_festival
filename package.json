@@ -24,8 +24,11 @@
   },
   "homepage": "https://github.com/GRVictor/metal_festival#readme",
   "devDependencies": {
+    "glob": "^11.0.0",
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.80.7"
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.80.7",
+    "sharp": "^0.33.5"
   }
 }
